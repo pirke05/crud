@@ -31,7 +31,7 @@
                         <td>{{ $newsItem->category->name }}</td>
                         <td>
                             <a class="btn btn-primary"
-                               href="{{ route('news.update', ['news'=> $newsItem->id])  }}">Edit</a>
+                               href="{{ route('news.show', ['news'=> $newsItem->id])  }}">Edit</a>
                             <form action="{{ route('news.destroy', ['newsItem'=> $newsItem->id]) }}" method="POST">
                                 <input type="hidden" name="_method" value="delete"/>
                                 <button type="submit" class="btn btn-danger">Delete</button>
